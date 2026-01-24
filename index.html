@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traitor_App_Home</title>
+    <meta name="autor" content="Samuel Dias Costa">
+    <meta name="description" content="the start point for the game setting. Choose the number of players and guiding for the following page.">
+
+    <!--CSS link-->
+
+    <link rel="stylesheet" href="style/traitor.css">
+    <!--JS link-->
+
+</head>
+<body>
+
+    <header id="gameNav"></header>
+
+    <div id="hero">
+        <h1>Welcome to the Traitor Game App</h1>
+
+        <img src="images/traitor_hero.webp" alt="hero image from the game Traitor" width="500">
+    </div>
+
+   <div id="StartSetting">
+        <form action="./htmls/events.html">
+            <label for="players">Number of players:</label>
+            <select id="players" name="players">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+
+            <button id="gameStarter" type="submit">Start Game</button>
+        </form>
+   </div> 
+</body>
+</html>
