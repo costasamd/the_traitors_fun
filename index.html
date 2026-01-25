@@ -16,27 +16,28 @@
 <body>
 
     <header id="gameNav"></header>
+    <main id="startPoint">
+        <div id="hero">
+            <h1>Welcome to the Traitor Game App</h1>
 
-    <div id="hero">
-        <h1>Welcome to the Traitor Game App</h1>
+            <img src="images/traitor_hero.webp" alt="hero image from the game Traitor" width="500">
+        </div>
 
-        <img src="images/traitor_hero.webp" alt="hero image from the game Traitor" width="500">
-    </div>
+        <div id="StartSetting">
+            <form action="./htmls/events.html">
+                <label for="players">Number of players:</label>
+                <select id="players" name="players">
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
 
-   <div id="StartSetting">
-        <form action="./htmls/events.html">
-            <label for="players">Number of players:</label>
-            <select id="players" name="players">
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-            </select>
-
-            <button id="gameStarter" type="submit">Start Game</button>
-        </form>
-   </div> 
+                <button id="gameStarter" type="submit">Start Game</button>
+            </form>
+    </div> 
+</main>
 </body>
 </html>
