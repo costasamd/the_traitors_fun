@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style/traitor.css">
     <!--JS link-->
 
+    <script type="module" src="js/main.js"></script>
+
 </head>
 <body>
 
@@ -24,7 +26,7 @@
         </div>
 
         <div id="StartSetting">
-            <form action="./htmls/events.html">
+            <form id="gameForm" action="./htmls/events.html">
                 <label for="players">Number of players:</label>
                 <select id="players" name="players">
                     <option value="3">3</option>
@@ -37,7 +39,10 @@
 
                 <button id="gameStarter" type="submit">Start Game</button>
             </form>
-    </div> 
-</main>
+        </div> 
+    </main>
+
+    <footer id="footer"></footer>
+
 </body>
 </html>
