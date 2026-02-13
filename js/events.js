@@ -5,6 +5,7 @@ const btnFBanish = document.getElementById('fBanish');
 
 let nightCounter = parseInt(localStorage.getItem('nightCounter')) || 0;
 
+
 btnNight.addEventListener('click', function () {
     
     nightCounter++;
@@ -13,4 +14,11 @@ btnNight.addEventListener('click', function () {
 
     document.getElementById('gameMessage').textContent = `Quiet Night - tonight no one Dies`;
 
+});
+
+btnMurder.addEventListener('click', function () {
+   
+    window.location.href = 'vote.html';
+
+    localStorage.setItem('murderKey', 'true');
 });
