@@ -9,8 +9,27 @@ export async function headerFooter(id, file) {
 /* function to save player settings to localStorage. this setting will be used in other parts of the game */
 
 export function saveSettings(settings) {
-    localStorage.setItem('playerSettings', JSON.stringify(settings));
+    localStorage.setItem('playerSettings', settings);
 }
+
+/* function to load the player setting and tranform is into a list of players. The list will be a list of numbers
+    and will be used to load the pages for  voting */
+
+function playersList() {
+
+    let playerL = [];
+    
+    const pList = Number(localStorage.getItem('playerSettings')) || 0;
+
+    for (let i = 1; i <= pList; i++){
+        playerL.push(i);
+    }
+    
+    localStorage.setItem('playersList', JSON.stringify(playerL));
+}
+
+playersList();
+
 
 /* functions to load content for different fases of the game. there are four events in the game.
     quiet night - no changes in the game. - load a simple message for the player.
